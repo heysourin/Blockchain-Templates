@@ -1,0 +1,13 @@
+{
+    "attributes" : [
+        {
+            "color" : "Gray",
+            "object" : "Face",
+            "Animal" : "Cat"
+        }
+    ],
+
+    "description" : "3D Face Which is very unique in its own way",
+    "image" : "https://gateway.pinata.cloud/ipfs/QmR94NaqDEUpsDjqScRq6V72VkgZu98ioSGNsvLmZeyxyB",
+    "name" : "3D Cat Face"
+}
