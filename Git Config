@@ -1,0 +1,10 @@
+git init
+git config user.name "heysourin"
+git config user.email "sourin07@gmail.com"
+echo "# Decentralized-Todo-List-App" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/heysourin/Decentralized-Todo-List-App.git
+git push -u origin main
