@@ -1,5 +1,5 @@
 import { ethers } from 'ethers'
-import React from 'react'
+import { React, useEffect } from 'react'
 
 const Navbar = ({ account, setAccount }) => {
   const connectHandler = async () => {
@@ -9,12 +9,15 @@ const Navbar = ({ account, setAccount }) => {
     const account = ethers.utils.getAddress(accounts[0])
     setAccount(account)
   }
+
+  useEffect(() => {
+    connectHandler()
+  }, [])
+
   return (
     <nav className="flex items-center justify-between flex-wrap bg-gray-900 p-6">
       <div className="flex items-center flex-shrink-0 text-white mr-6">
-        <span className="font-bold text-3xl tracking-tight">
-          Web3 Discord
-        </span>
+        <span className="font-bold text-3xl tracking-tight">Web3 Discord</span>
       </div>
       <div className="flex">
         {account ? (
@@ -39,6 +42,7 @@ const Navbar = ({ account, setAccount }) => {
 }
 
 export default Navbar
+
 
 /*
 Don't forget to pass the parameters account and setAccount in app.js while importing
